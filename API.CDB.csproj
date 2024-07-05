@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -10,14 +10,44 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <Compile Remove="API.CDB.Business\**" />
+    <Compile Remove="API.CDB.Data\**" />
+    <Compile Remove="API.CDB.Domain\**" />
+    <Compile Remove="API.CDB.IoC\**" />
+    <Compile Remove="API.CDB.Tests\**" />
+    <Compile Remove="calculadora-rendimentos\**" />
+    <Content Remove="API.CDB.Business\**" />
+    <Content Remove="API.CDB.Data\**" />
+    <Content Remove="API.CDB.Domain\**" />
+    <Content Remove="API.CDB.IoC\**" />
+    <Content Remove="API.CDB.Tests\**" />
+    <Content Remove="calculadora-rendimentos\**" />
+    <EmbeddedResource Remove="API.CDB.Business\**" />
+    <EmbeddedResource Remove="API.CDB.Data\**" />
+    <EmbeddedResource Remove="API.CDB.Domain\**" />
+    <EmbeddedResource Remove="API.CDB.IoC\**" />
+    <EmbeddedResource Remove="API.CDB.Tests\**" />
+    <EmbeddedResource Remove="calculadora-rendimentos\**" />
+    <None Remove="API.CDB.Business\**" />
+    <None Remove="API.CDB.Data\**" />
+    <None Remove="API.CDB.Domain\**" />
+    <None Remove="API.CDB.IoC\**" />
+    <None Remove="API.CDB.Tests\**" />
+    <None Remove="calculadora-rendimentos\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\API.CDB.Business\API.CDB.Business.csproj" />
-    <ProjectReference Include="..\API.CDB.Domain\API.CDB.Domain.csproj" />
-    <ProjectReference Include="..\API.CDB.IoC\API.CDB.IoC.csproj" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="xunit.assert" Version="2.5.3" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="API.CDB.Business\API.CDB.Business.csproj" />
+    <ProjectReference Include="API.CDB.Domain\API.CDB.Domain.csproj" />
+    <ProjectReference Include="API.CDB.IoC\API.CDB.IoC.csproj" />
   </ItemGroup>
 
 </Project>

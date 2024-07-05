@@ -1,0 +1,30 @@
+
+<style>
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+
+  @media screen and (max-width: 650px) {
+    .content {
+      flex-direction: column;
+      width: max-content;
+    }
+  }
+</style>
+
+<main class="main">
+  <div class="content">
+    <app-calculo-cdb></app-calculo-cdb>
+  </div>
+</main>
+<router-outlet></router-outlet>
+
