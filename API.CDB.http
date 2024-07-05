@@ -1,6 +1,0 @@
-@API.Cdb_HostAddress = http://localhost:5286
-
-GET {{API.Cdb_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

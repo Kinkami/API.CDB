@@ -21,6 +21,7 @@
     <ProjectReference Include="..\API.CDB.Business\API.CDB.Business.csproj" />
     <ProjectReference Include="..\API.CDB.csproj" />
     <ProjectReference Include="..\API.CDB.Domain\API.CDB.Domain.csproj" />
+    <ProjectReference Include="..\API.CDB.IoC\API.CDB.IoC.csproj" />
   </ItemGroup>
 
   <ItemGroup>
